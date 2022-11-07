@@ -7,7 +7,10 @@ createApp({
       contatti: [{
 
         nome:'Michele',
-        avatar:'img/avatar_1.jpg'
+        avatar:'img/avatar_1.jpg',
+        testo: 'Ultimo messaggio inviato',
+        orario: '12'
+
       }]
 
     }
