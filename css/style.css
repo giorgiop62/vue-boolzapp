@@ -26,6 +26,7 @@ header {
   width: 800px;
   background-image: url(../img/mine.jpg);
   object-fit: cover;
+
 }
 img {
   width: 60px;
@@ -39,6 +40,7 @@ img {
 .listIcone li {
   margin: 20px;
   list-style-type: none;
+  color:  grey;
 }
 
 .profile {
@@ -54,6 +56,7 @@ img {
   background-color: rgb(145 219 250);
   height: 80px;
   display: flex;
+  align-items: center;
 }
 .link {
   color: grey;
@@ -64,6 +67,10 @@ img {
 }
 .text {
   margin-left: 20px;
+}
+
+.text a {
+  color: grey;
 }
 .search {
   height: 60px;
@@ -89,14 +96,10 @@ input {
   width: 70px;
   margin-top: 10px;
 }
-.utente h3 {
-  margin-top: 30px;
-}
-.utente p {
-  margin-bottom: 30px;
-}
+
+
 .scrollbar {
-  overflow: scroll;
+  overflow: auto;
 }
 .openProfile {
   height: 70px;
@@ -114,7 +117,57 @@ input {
 .setting li {
   margin: 20px;
   list-style-type: none;
+  color: gray;
 }
+
+.icona{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.fa-bell-slash {
+  color: rgb(145 219 250);
+  font-size: 20px;
+}
+
+.utente .text {
+  color: gainsboro;
+}
+footer ul {
+  display: flex;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer {
+  background-color:rgb(243 238 234);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.fa-face-smile, .fa-microphone{
+  color: grey;
+  font-size: 25px;
+}
+
+.msg {
+  width: 400px;
+  height: 25px;
+}
+
+
+
+
 
 
 
