@@ -16,7 +16,7 @@
       <div class="slider">
         <div class="profile">
           <div class="img">
-            <img src="./img /avatar_io.jpg" alt="io">
+            <img src="./img/avatar_io.jpg" alt="io">
           </div>
           <div class="listIcone">
             <ul>
@@ -44,16 +44,17 @@
 
         </div>
 
-        <div class="box">
+        <div class="box"
+          v-for="contatto in contatti">
           <div class="avatar">
-            <img src="./img /avatar_1.jpg" alt="avatar_1">
+            <img :src="contatto.avatar" alt="avatar_1">
           </div>
           <div class="utente">
-            <h3>Michele</h3>
-            <p>Ultimo messaggio inviato</p>
+            <h3>{{contatto.nome}}</h3>
+            <p>{{contatto.testo}}</p>
           </div>
           <div class="clock">
-            <p>12:00</p>
+            <p>{{contatto.orario}}</p>
 
           </div>
 

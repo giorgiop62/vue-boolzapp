@@ -24,7 +24,8 @@ header {
 }
 .chat {
   width: 800px;
-  background-color: yellow;
+  background-image: url(../img/mine.jpg);
+  object-fit: cover;
 }
 img {
   width: 60px;
@@ -67,11 +68,14 @@ img {
 .search {
   height: 60px;
   background-color: white;
+  display: flex;
+  width: 100%;
 }
 input {
-  width: 99%;
-  height: 50px;
+  width: 100%;
+ 
 }
+
 .box {
   display: flex;
   align-items: center;
