@@ -5,82 +5,69 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Boolzapp</title>
+  <title>Vue-boolzapp</title>
   <link rel="stylesheet" href="./css/style.css">
-  <script src='https://unpkg.com/vue@3'></script>
-
 </head>
 <body>
-  <div class="background">
-    <div class="green"></div>
-    <div class="grey"></div>
-
-    <div id="app">
-
-      <div class="container">
-
-        <div class="contact">
-          <div class="profile">
-            <div class="img">
-              <img src="./img /avatar_io.jpg" alt="io">
-            </div>
-            <div class="listIcone">
-              <ul>
-                <li>z</li>
-                <li>y</li>
-                <li>x</li>
-              </ul>
-
-            </div>
-
-            </div>
+  <header></header>
+  <div id="app">
+    <div class="container">
+      <div class="slider">
+        <div class="profile">
+          <div class="img">
+            <img src="./img /avatar_io.jpg" alt="io">
           </div>
-
-          <div class="notifica">
-            <div class="icona">
-              <p>x</p>
-            </div>
-            <div class="text">
-              <p>Ricevi notifiche di nuovi messaggi</p>
-              <a  class="link" href="#">Attiva notifiche desktop</a>
-            </div>
+          <div class="listIcone">
+            <ul>
+              <li>z</li>
+              <li>y</li>
+              <li>x</li>
+            </ul>
           </div>
+        </div>
 
-          <div class="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-              <input type="text" placeholder="Cerca o inizia una nuva chat ">
-            </div>
+        <div class="info">
+          <div class="icona">
+            <p>X</p>
           </div>
+          <div class="text">
+            <p>Ricevi notifiche di nuovi messaggi</p>
+            <a href="#">Attiva notifiche desktop </a>
 
-          <div class="rubrica">
-           <ul>
-            <li v-for="(contatto,index) in contatti">
-              
+          </div>
+        </div>
 
-            </li>
-           </ul>
-
-
-
-
-          
-
-
+        <div class="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+          <input type="text" placeholder="Cerca o inizia una nuva chat ">
 
         </div>
 
-        <div class="chat">
+        <div class="box">
+          <div class="avatar">
+            <img src="./img /avatar_1.jpg" alt="avatar_1">
+          </div>
+          <div class="utente">
+            <h3>Michele</h3>
+            <p>Ultimo messaggio inviato</p>
+          </div>
+          <div class="clock">
+            <p>12:00</p>
+
+          </div>
+
+        
+
 
         </div>
 
       </div>
+      <div class="chat"></div>
 
     </div>
 
 
-
-
   </div>
-  <script src="./js/script.js"></script>
+  
 </body>
 </html>

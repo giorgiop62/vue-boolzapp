@@ -1,47 +1,37 @@
-.green {
-  background-color: #159688;
-  width: 100%;
-  height: 100px;
-}
-
-.grey {
+body {
   background-color: #dadbd4;
-  width: 100%;
-  height: 100vh;
-}
-.background {
   position: relative;
 }
-
-.container {
-  width: 80%;
-  height: 100vh;
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #159688;
+}
+#app {
   position: absolute;
+  height: 100vh;
+  background-color: aliceblue;
   z-index: 999;
+  width: 1200px;
   top: 20px;
-  left: 149px
+  left: 300px;
 }
-
-.contact {
-  width: 500px;
-
+.container {
+  display: flex;
+  height: 100vh;
 }
-
+.slider {
+  width: 400px;
+}
+.chat {
+  width: 800px;
+  background-color: yellow;
+}
 img {
-  width: 70px;
+  width: 60px;
   border-radius: 50%;
   margin: 10px;
 }
-
-.profile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
-  background-color: #dadbd4;
-  height: 60px;
-}
-
 .listIcone ul {
   display: flex;
 }
@@ -51,14 +41,20 @@ img {
   list-style-type: none;
 }
 
-.notifica{
-  background-color: rgb(145 219 250);
-  height: 80px;
-  width: 500px;
+.profile {
   display: flex;
-  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  background-color: #dadbd4;
+  height: 70px;
 }
 
+.info{
+  background-color: rgb(145 219 250);
+  height: 80px;
+  display: flex;
+}
 .link {
   color: grey;
 }
@@ -71,7 +67,28 @@ img {
 }
 .search {
   height: 60px;
-  width: 500px;
   background-color: white;
 }
+input {
+  width: 99%;
+  height: 50px;
+}
+.box {
+  display: flex;
+  background-color: #159688;
+  align-items: center;
+  justify-content: space-around
+
+}
+.avatar {
+  width: 70px;
+  margin-top: 10px;
+}
+.utente h3 {
+  margin-top: 30px;
+}
+.utente p {
+  margin-bottom: 30px;
+}
+
 
