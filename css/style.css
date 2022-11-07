@@ -80,8 +80,9 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: solid 1px;
+  border-bottom: 1px gray;
   background-color: white;
+
 
 }
 .avatar {
@@ -94,5 +95,33 @@ input {
 .utente p {
   margin-bottom: 30px;
 }
+.scrollbar {
+  overflow: scroll;
+}
+.openProfile {
+  height: 70px;
+  background-color: #dadbd4;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setting ul {
+  display: flex;
+}
+
+.setting li {
+  margin: 20px;
+  list-style-type: none;
+}
+
+
+
+
+
+
+
+
 
 

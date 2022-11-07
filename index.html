@@ -43,18 +43,18 @@
           <input type="text" placeholder="Cerca o inizia una nuva chat ">
 
         </div>
-
-        <div class="box"
+        <div class="scrollbar">
+          <div class="box"
           v-for="contatto in contatti">
           <div class="avatar">
             <img :src="contatto.avatar" alt="avatar_1">
           </div>
           <div class="utente">
             <h3>{{contatto.nome}}</h3>
-            <p>{{contatto.testo}}</p>
+            <p class="text">{{contatto.testo}}</p>
           </div>
           <div class="clock">
-            <p>{{contatto.orario}}</p>
+            <p class="text">{{contatto.orario}}</p>
 
           </div>
 
@@ -62,9 +62,34 @@
 
 
         </div>
+        </div>
+  
 
       </div>
-      <div class="chat"></div>
+      <div class="chat">
+        <div class="openProfile">
+          <div>
+            <p>Avatar</p>
+          </div>
+
+          <div class="setting">
+            <ul>
+              <li>x</li>
+              <li>y</li>
+              <li>z</li>
+            </ul>
+          </div>
+          
+
+
+        </div>
+
+        <footer>
+
+
+        </footer>
+        
+      </div>
 
     </div>
 
