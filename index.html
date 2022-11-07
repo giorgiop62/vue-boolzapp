@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Boolzapp</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src='https://unpkg.com/vue@3'></script>
+
+</head>
+<body>
+  <div class="background">
+    <div class="green"></div>
+    <div class="grey"></div>
+
+    <div id="app">
+
+      <div class="container">
+
+        <div class="contact">
+          <div class="profile">
+            <div class="img">
+              <img src="./img /avatar_io.jpg" alt="io">
+            </div>
+            <div class="listIcone">
+              <ul>
+                <li>z</li>
+                <li>y</li>
+                <li>x</li>
+              </ul>
+
+            </div>
+
+            </div>
+          </div>
+
+          <div class="notifica">
+            <div class="icona">
+              <p>x</p>
+            </div>
+            <div class="text">
+              <p>Ricevi notifiche di nuovi messaggi</p>
+              <a  class="link" href="#">Attiva notifiche desktop</a>
+            </div>
+          </div>
+
+          <div class="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+              <input type="text" placeholder="Cerca o inizia una nuva chat ">
+            </div>
+          </div>
+
+          <div class="rubrica">
+           <ul>
+            <li v-for="(contatto,index) in contatti">
+              
+
+            </li>
+           </ul>
+
+
+
+
+          
+
+
+
+        </div>
+
+        <div class="chat">
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
