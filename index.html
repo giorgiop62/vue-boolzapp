@@ -43,10 +43,11 @@
 
       </div>
 
+      <div class="rubrica">
       <div class="box" 
       v-for="(contatto , indice) in contatti"
       :class="{'active': indice == activeBox}"
-      @click="cambiaImg(indice)">
+      @click="cambiaBox(indice)">
         <div class="avatar">
           <img :src="contatto.avatar" alt="avatar_1">
         </div>
@@ -59,7 +60,7 @@
         
 
       </div>
-
+    </div>
 
 
     </div>
@@ -67,7 +68,8 @@
     <div class="container-right">
       <div class="openProfile">
         <div class="avatar">
-         <img :src="contatti[activeImage]" alt="">
+         <img :src="contatti[activeBox].avatar" alt="">
+         {{ contatti[activeBox].nome }}
         </div>
 
         <div class="setting_1">
@@ -80,7 +82,7 @@
         
       </div>
 
-      <footer>
+    
 
         <footer>
           <ul>
@@ -92,7 +94,11 @@
 
         </footer>
 
-      </footer>
+
+        <div class="chat">
+          
+
+        </div>
 
 
 

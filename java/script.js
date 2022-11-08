@@ -74,5 +74,10 @@ createApp({
     }
 
   },
+  methods:{
+    cambiaBox(index){
+      this.activeBox = index;
+    }
+  }
 
 }).mount('#app')

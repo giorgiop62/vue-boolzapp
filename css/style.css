@@ -107,16 +107,8 @@ body {
   height: 100px;
   background-color: white;
   justify-content:space-around;
-  overflow-y: scroll;
  
 }
-
-.box :hover {
-  cursor: pointer;
-  background: #efefef;
-}
-
-
 
 .setting_1 ul {
   display: flex;
@@ -136,6 +128,15 @@ body {
   align-items: center;
 }
 
+footer {
+  height : 80px;
+  background-color : white;
+  position:relative;
+  bottom:-550px;
+  align-items: center;
+  display: flex;
+  }
+
 footer ul {
   display: flex;
   align-items: center;
@@ -144,13 +145,6 @@ footer ul {
 footer li {
   list-style-type: none;
   margin-left: 20px;
-}
-
-footer {
-  background-color:rgb(243 238 234);
-  height: 80px;
-  display: flex;
-  align-items: center;
 }
 
 .fa-face-smile, .fa-microphone{
@@ -164,7 +158,12 @@ footer {
 }
 .active {
   background: #efefef ;
-  cursor: pointer;
+
+}
+
+.rubrica {
+  overflow-y: scroll;
+    height: calc(100vh - 243px);
 }
 
 
