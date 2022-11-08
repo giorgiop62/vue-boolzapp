@@ -107,7 +107,16 @@ body {
   height: 100px;
   background-color: white;
   justify-content:space-around;
+  overflow-y: scroll;
+ 
 }
+
+.box :hover {
+  cursor: pointer;
+  background: #efefef;
+}
+
+
 
 .setting_1 ul {
   display: flex;
@@ -150,8 +159,12 @@ footer {
 }
 
 .msg {
-  width: 400px;
+  width: 100%;
   height: 40px;
+}
+.active {
+  background: #efefef ;
+  cursor: pointer;
 }
 
 

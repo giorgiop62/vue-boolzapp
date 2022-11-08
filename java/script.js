@@ -68,10 +68,11 @@ createApp({
             
                     },
       
-    ]
+    ],
+    activeBox:0
 
     }
 
-  }
+  },
 
 }).mount('#app')
