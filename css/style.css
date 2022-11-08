@@ -1,110 +1,38 @@
-body {
-  background-color: #dadbd4;
-  position: relative;
+*{
+  margin: 0;
+  padding: 0;
 }
-header {
-  width: 100%;
-  height: 100px;
-  background-color: #159688;
+
+body {
+  background-color: #009688;
 }
 #app {
-  position: absolute;
+  margin: 20px auto;
+  background-color: aliceblue;
+  width: 80%;
   height: 100vh;
-  z-index: 999;
-  width: 1200px;
-  top: 20px;
-  left: 300px;
-}
-.container {
   display: flex;
-  height: 100vh;
 }
-.slider {
-  width: 400px;
+
+.container-left {
+  width: 350px;
 }
-.chat {
-  width: 800px;
+.container-right {
+  width: calc(100% - 350px);
   background-image: url(../img/mine.jpg);
   object-fit: cover;
-
-}
-img {
-  width: 60px;
-  border-radius: 50%;
-  margin: 10px;
-}
-.listIcone ul {
-  display: flex;
 }
 
-.listIcone li {
-  margin: 20px;
-  list-style-type: none;
-  color:  grey;
-}
-
-.profile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
-  background-color: #dadbd4;
-  height: 70px;
-}
-
-.info{
-  background-color: rgb(145 219 250);
-  height: 80px;
-  display: flex;
-  align-items: center;
-}
-.link {
-  color: grey;
-}
-
-.icona {
-  margin-left:20px ;
-}
-.text {
-  margin-left: 20px;
-}
-
-.text a {
-  color: grey;
-}
-.search {
-  height: 60px;
-  background-color: white;
-  display: flex;
-  width: 100%;
-}
-input {
-  width: 100%;
- 
-}
-
-.box {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-bottom: 1px gray;
-  background-color: white;
-
-
-}
-.avatar {
+.profilo img, .openProfile img {
   width: 70px;
-  margin-top: 10px;
+  border-radius: 50px;
+  margin-left: 10px;
+
 }
 
-
-.scrollbar {
-  overflow: auto;
-}
-.openProfile {
-  height: 70px;
-  background-color: #dadbd4;
-  padding: 20px;
+.profilo {
+  height: 100px;
+  background-color:  #dadbd4;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,7 +45,25 @@ input {
 .setting li {
   margin: 20px;
   list-style-type: none;
-  color: gray;
+  color:  gray;
+}
+
+.info{
+  background-color: rgb(145 219 250);
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.text a {
+  color: grey;
+}
+
+.icona {
+  margin-left:20px ;
+}
+.text {
+  margin-left: 20px;
 }
 
 .icona{
@@ -137,20 +83,63 @@ input {
   font-size: 20px;
 }
 
-.utente .text {
-  color: gainsboro;
+.search {
+  height: 60px;
+  background-color: white;
+  display: flex;
 }
+.search button {
+  width: 50px;
+}
+
+.search input {
+  width: 100%;
+ 
+}
+
+.box img {
+  width: 76px;
+  border-radius: 50px;
+}
+.box {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: white;
+  justify-content:space-around;
+}
+
+.setting_1 ul {
+  display: flex;
+}
+
+.setting_1 li {
+  margin: 20px;
+  list-style-type: none;
+  color: gray;
+}
+
+.openProfile {
+  height: 100px;
+  background-color:  #dadbd4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 footer ul {
   display: flex;
+  align-items: center;
 }
 
 footer li {
   list-style-type: none;
+  margin-left: 20px;
 }
 
 footer {
   background-color:rgb(243 238 234);
-  height: 60px;
+  height: 80px;
   display: flex;
   align-items: center;
 }
@@ -162,16 +151,8 @@ footer {
 
 .msg {
   width: 400px;
-  height: 25px;
+  height: 40px;
 }
-
-
-
-
-
-
-
-
 
 
 
