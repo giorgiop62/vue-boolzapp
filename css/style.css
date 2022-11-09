@@ -132,7 +132,7 @@ footer {
   height : 80px;
   background-color : white;
   position:relative;
-  bottom:-550px;
+  bottom:-600px;
   align-items: center;
   display: flex;
   }
@@ -165,6 +165,34 @@ footer li {
   overflow-y: scroll;
     height: calc(100vh - 243px);
 }
+
+.messaggi {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.send {
+  background-color: #d6f8bc;
+  height: 80px;
+  border-radius: 20px;
+  margin: 10px;
+  float: right;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items:center
+}
+
+.recived {
+  background-color: white;
+  border-radius: 20px;
+  height: 80px;
+  width: 200px;
+  margin: 10px;
+}
+
+
 
 
 
