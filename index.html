@@ -38,15 +38,18 @@
       </div>
 
       <div class="search">
-        <button @click="ricercsStringa()" type="submit"><i class="fa fa-search"></i></button>
-        <input @keyup="ricercaStringa()" v-model="ricerca" type="text" placeholder="Cerca o inizia una nuva chat ">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <input @keyup="filtraContatti" v-model="ricerca" type="text" placeholder="Cerca o inizia una nuva chat ">
 
       </div>
 
+      <!-- v-show="contatto.name.toLowerCase().includes(ricerca.toLowerCase())"
+        sintassi super ristretta -->
+
       <div class="rubrica">
       <div class="box"
-      v-for="(contatto , indice) in contatti"
-      v-show="contatto.visible" 
+      v-show="contatto.visible"
+      v-for="(contatto, indice) in contatti"
       :class="{'active': indice == activeBox}"
       @click="cambiaBox(indice)">
         <div class="avatar">

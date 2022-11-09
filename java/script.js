@@ -206,11 +206,15 @@ createApp({
     cambiaBox(index){
       this.activeBox = index;
     },
-
-    ricercaStringa(stringa){
-      console.log(this.ricerca);
-  
+    filtraContatti() {
+      this.contatti.forEach(contatto => {
+        contatto.visible = true;
+        if (!contatto.nome.toLowerCase().includes(this.ricerca.toLowerCase())) {
+          contatto.visible = false;
+        }
+      });
     }
   }
+
 
 }).mount('#app')
