@@ -4,7 +4,10 @@ createApp({
   data(){
     return {
 
+      selezioneMessaggio:'0',
+      messaggioInviato:'',
       ricerca:'',
+      chat:'',
       contatti: [
         {
 
@@ -212,8 +215,32 @@ createApp({
         if (!contatto.nome.toLowerCase().includes(this.ricerca.toLowerCase())) {
           contatto.visible = false;
         }
+        
       });
+    },
+
+    addMessage(){
+
+      var options = {weekday: 'long', year:'numeric',month:'long',day:'numeric'};
+      var today = new Date();
+
+      
+      this.contatti[this.activeBox].messages.push({
+        date: today,
+        message: this.messaggioInviato,
+        status: 'sent'
+      });
+    },
+
+    messaggioSelezionato(indice){
+      if(this.selezioneMessaggio == '2'){
+        this.contatti[this.activeBox].messages.splice(indice,1);
+      }
     }
+
+   
+
+    
   }
 
 

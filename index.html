@@ -48,6 +48,7 @@
 
       <div class="rubrica">
       <div class="box"
+      v-model="chat"
       v-show="contatto.visible"
       v-for="(contatto, indice) in contatti"
       :class="{'active': indice == activeBox}"
@@ -91,7 +92,7 @@
         <footer>
           <ul>
             <li><i class="fa-regular fa-face-smile"></i></li>
-            <li><input @keyup.enter class="msg" type="text" placeholder="scrivi un messaggio"></li>
+            <li><input v-model="messaggioInviato" @keyup.enter="addMessage" type="text" placeholder="scrivi un messaggio"></li>
             <li><i class="fa-solid fa-microphone"></i></li>
           </ul>
 
@@ -102,10 +103,10 @@
           <div class="send"
           v-for="messaggio in contatti[activeBox].messages">
             <div>{{messaggio.message}}</div>
-            <select>
+            <select v-model="selezioneMessaggio" @change="messaggioSelezionato(indice)">
               <option><i class="fa-light fa-chevron-down"></i></option>
-              <option value="">Info</option>
-              <option value="">Elimina</option>
+              <option value="1">Info</option>
+              <option value="2">Elimina</option>
             </select>
 
           </div>
